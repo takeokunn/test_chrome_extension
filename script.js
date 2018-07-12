@@ -12,9 +12,10 @@ function createDate () {
 
 // 画像をいれる
 function insertImg (element) {
+    const extension_id = chrome.i18n.getMessage('@@extension_id');
     const image = document.createElement('img');
     image.id = 'take_chrome_extension';
-    image.src = 'chrome-extension://iljeinomgpfadelclofejekicdnekglk/img/logo.jpg';
+    image.src = `chrome-extension://${extension_id}/img/logo.jpg`;
     image.style = 'width:30px;height:30px;border-radius:50%;';
     element.appendChild(image);
     return image;
