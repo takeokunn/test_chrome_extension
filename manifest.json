@@ -1,0 +1,11 @@
+{
+    "name": "take test",
+    "version": "0.0.1",
+    "manifest_version": 2,
+    "description": "",
+    "content_scripts": [{
+        "matches": ["http://*/*", "https://*/*"],
+        "js": ["script.js"]
+    }],
+    "web_accessible_resources": ["img/logo.jpg"]
+}
